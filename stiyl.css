@@ -1,0 +1,262 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{  
+    width: 100%;
+    height: 100%;
+    position: fixed;
+}
+a, a:hover{                 
+      text-decoration: none;
+      color: #fff;
+  }
+ul{
+    list-style:none;
+}
+li{
+     display: inline-block;
+}         /*navbar-logo-icon*/
+.headar{
+    width: 100%;
+    height: 100vh;
+    background-color:#0A1F3A;
+}                 
+/*شريط التنقل*/
+.headar .nav-bar{
+  width: 90%;
+  height: 80px;
+  margin: auto;
+  color: #ffffff;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top:80px ;
+
+}
+
+      /*قسم الهوم*/
+.headar .nav-bar .menu ul li .active{
+    color:#fdfdfd;
+    font-size: 22px; 
+    font-family: sans-serif;
+}
+
+.headar .nav-bar .menu ul li a:hover{
+   font-size: 25px;
+   color: #ffffff;
+} 
+/*الشعارالموقع*/
+.headar-nav-bar.logo{
+    left: 50px;
+
+} 
+.headar .nav-bar .logo{
+  margin-left:20px;
+  width: 170px ; 
+  height:auto ;
+}
+.headar .nav-bar .logo img{
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+       /*قسم شريط التنقل*/
+.headar .nav-bar .menu ul li{
+   margin-right: 0px;
+}
+.headar .nav-bar .menu ul li a{
+    font-size: 19px;
+    letter-spacing: 2px;
+    padding: 10px;
+    border-radius: 5px;
+    text-transform: capitalize;
+    transition: all 0.5s;
+    opacity: 0.6;
+}
+.headar .nav-bar .menu ul li a .active{
+    opacity: 1;
+}
+.headar .nav-bar .menu ul li a:hover{
+    opacity: 1;
+}
+h1{
+      width: 500px;
+      font-family:sans-serif;
+      color: rgb(255, 255, 255);
+      font-size: 30px;
+      margin-top: 150px;
+      margin-left: 95px;
+      font-size: 30px;
+     
+      
+  }
+  .social-media{
+    font-size: 25px;
+
+  }
+  .social-media:hover{
+    color: #f10000;
+  }
+  /*عنوان الموقع*/
+  h1 span{
+      color: rgb(255, 22, 22);
+      font-size: 60px;
+       
+    
+ }/*نص*/
+ p{
+    color: #fcfafa;
+    width: 300px;
+    font-family:'montserrat',sans-serif;
+    margin-top: 15px;
+    margin-left: 100px;
+}
+/*قسم زورار الحجز*/
+.discover-btn {
+
+    display: flex;
+    align-items: center;
+    outline: none;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-top: 50px;
+    padding: 6px 20px;
+    border: 4px solid #e3ff0d;
+    background-color: red;
+    box-shadow: 5px 7px 20px #000;
+    margin-left: 100px;
+    position: fixed;
+    position: absolute;
+    z-index: 3;
+    
+
+}
+.discover-btn:hover{
+    background-color: #24940d;
+    border: 4px solid #f10000;
+
+  }
+  .discover-btn a{
+    color: #fff;
+    font-size: 25px;
+    letter-spacing: 2px;
+    margin-right: 15px;
+    text-transform: capitalize;
+    text-align: center;
+ }
+ .discover-btn a:hover{
+  
+    font-size:25px ;
+ }
+ .discover-btn a span{
+    color: #fff;
+    font-size: 45px;
+}
+/*نص*/
+.tareh p{
+    padding-top: 150px ;
+    color: #ffa938;
+    font-size: 10px;
+
+}
+
+.Inam p{
+      margin-left:220px ;
+      margin-top: -32px;
+      color:#ffa938;
+      font-size: 10px;
+   
+}
+/*قسم الالصور*/
+.headar .my-car{
+    width: 70%;
+    padding-top: 100px;
+}
+.headar .my-car img{
+    
+    width: 990px;
+    height: 550px;
+    margin: auto;
+    float: right;
+}
+/*فسم خلفيه الصفرا*/
+.boxe{
+    content: 0;
+    position: absolute;
+    top: 35%;
+    left: 47%;
+    width: 55%;
+    height: 45%;
+    background-color: #bd9d00;
+    border-top-left-radius: 110px;
+    border-bottom-left-radius: 110px;
+    z-index:2;
+}
+ 
+.image-container {
+    width: 45%;
+    height: 50%;
+    background-size: cover;
+    background-position: center;
+    transition: background-image 0.5s ease;
+
+}
+.image-container{
+    position: absolute;
+    top: 35%;
+    left: 45%;
+    z-index: 3;
+}
+/*قسم 2زورار تقليب */
+.buttona,.buttonb{
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color:#0A1F3A ;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+.buttona{
+    border: 2px solid #ffffff;
+    position: absolute;
+    top: 87%;
+    left: 50%;
+}
+.buttonb{
+    border: 2px solid #ffffff;
+      position: absolute;
+    top: 87%;
+    left: 55%;
+}
+/*قسم تقليب الصور*/
+@keyframes slideLeft {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideRight {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.slide-left {
+    animation: slideLeft 0.5s ease;
+}
+
+.slide-right {
+    animation: slideRight 0.5s ease;
+
+}
+

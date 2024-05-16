@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>حجز سيارة</title>
+    <link rel="stylesheet" href="stiyl2.css">
+</head>
+<body>
+
+    <div class="menu">  
+        <ul>
+           <li><a href="indexe.html" class="active">Home</a></li>
+           <li><a href="indexe5.html"class="active">Services</a></li>
+           <li><a href="indexe3.html"class="active">Contact</a></li>
+        </ul>
+    </div>
+    
+     <button class="ecxnt"><a href="indexe.html">></a></button>
+
+
+<div class="container">
+    <h1>حجز سيارة</h1>
+    <form action="#" method="post">
+        <label for="name">الاسم:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="pickup-date">تاريخ الاستلام:</label>
+        <input type="date" id="pickup-date" name="pickup-date" required>
+        
+        <label for="return-date">تاريخ الإرجاع:</label>
+        <input type="date" id="return-date" name="return-date" required>
+        
+        <label for="car-type">نوع السيارة:</label>
+        <select id="car-type" name="car-type" required>
+            <option value="">اختر نوع السيارة</option>
+            <option value="سيدان">سيدان</option>
+            <option value="سيارة دفع رباعي">سيارة دفع رباعي</option>
+            <option value="شاحنة">شاحنة</option>
+            <option value="سيارة رياضية">سيارة رياضية</option>
+        </select>
+        
+        <input type="submit" value="حجز السيارة">
+    </form>
+</div>
+
+</body>
+</html>

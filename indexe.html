@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تاجير سيارات|</title>
+    
+    <meta thhp-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link rel="stylesheet" href="stiyl.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-N9aOg//JsPw/ZC7XVfvhVeL6F/D4Zbd2bpjiyoQWcTvRlKb9viF2p9ZJE5qu+ib2YQLg8wUbsaj7i+K0cOimGw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--<meta http-equiv="Refresh" content="2">-->
+
+  </head> 
+<body>           <!--headarقسم -->
+  <SECtion class="headar">
+        <div class="nav-bar">  
+            <!--الشعار-->
+            <div class="logo">
+                <img src="imag/Untitled_logo_3_free-file.jpg" alt="شعار" class="logo">
+            </div>
+
+             <!--المنيو-->       
+          <div class="menu">  
+                       <ul>
+                          <li><a href="#" class="active">Home</a></li>
+                          <li><a href="indexe4.html"class="active">Services</a></li>
+                          <li><a href="indexe3.html"class="active">Contact</a></li>
+                       </ul>
+           </div>     
+           <!--الحسبات الخاصه-->
+           <div class="social-media">       
+                 <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                 <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                 <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+            </div>
+        </div>    
+        <!--العنوان الصفحه-->
+    <div class="h1">   
+         <h1><span>Mero cars</span><br>Cars at the Best prices</h1>
+         <!--نص مقال-->
+         <p class="prgrf">Luxury car rental with professional drivers who can provide a comfortable and safe travel experience. <br>
+          Car delivery and pick-up service from and to the airport or any other location as per the customer's request.
+          </p>          
+    </div>        <!--زورار الحجز-->
+         <button class="discover-btn">
+            <a href="indexe2.html">Bookig</a><span><i class="fab fa-arrow-circle-o-right"></i></span>
+        </button> 
+        <div class="tareh">   <!-- اسم و تاريخ-->
+                <p>Dateof birth<br><br>2006-2024</p>
+        </div>
+                         <!--اسمي-->
+        <div class="Inam">
+            <p>Web Developer\<br> <br>Amer Mohammd Saed</p>
+        </div>
+                
+          
+            <div class="image-container" style="background-image: url('image1.jpg');"></div>
+
+            <button onclick="previousImage()" class="buttona">&lt;</button>
+            <button onclick="nextImage()" class="buttonb">&gt;</button>
+  
+               <!--قسم البوكس الاصفر-->
+            <div class="boxe"> </div>
+            
+            
+            
+            <script>
+               var currentIndex = 0;
+    var images = ['imag/T77_PO_YB.webp', 'imag/T77_PO_Black.webp', 'imag/T99_Blue.webp', 'imag/ (3).png'];
+    var imageContainer = document.querySelector('.image-container');
+
+    // Set the first image on page load
+    window.onload = function() {
+        setImage();
+    };
+
+    function previousImage() {
+        currentIndex = (currentIndex - 1 + images.length) % images.length;
+        setImage(true);
+    }
+
+    function nextImage() {
+        currentIndex = (currentIndex + 1) % images.length;
+        setImage(false);
+    }
+
+    function setImage(isSlideLeft) {
+        imageContainer.classList.remove('slide-left');
+        imageContainer.classList.remove('slide-right');
+
+        if (isSlideLeft) {
+            imageContainer.classList.add('slide-right');
+        } else {
+            imageContainer.classList.add('slide-left');
+        }
+
+        setTimeout(function() {
+            imageContainer.style.backgroundImage = "url('" + images[currentIndex] + "')";
+        }, 250); // Adjust delay according to your animation duration
+    }
+          </script> 
+</body>
+</html>
